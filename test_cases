@@ -1,0 +1,42 @@
+	****TEST CASES****
+	CASE 1
+	1. Login to staging.joordev.com
+	2. Go to Messages
+	3. Click on Send Message page
+	4. In Compose a Message pop-up choose "Select connection"
+	5. Choose random recipient/s from drop down list
+	6. Fill in message subject and message body
+	7. Click on send button
+	
+	Verification criteria
+	1. Verify that pop-up with message "Your message has been sent"
+	2. Verify that message sent in step 7 is in Outbox and that message Recipient, subject and body are as expected
+	3. Verify that each recipient got message with subject and message body from step 6
+	
+	CASE 2
+	1. Login to staging.joordev.com
+	2. Go to Messages
+	3. Click on Send Message page
+	4. In Compose a Message pop-up choose "Send to all my connections"
+	5. Fill in message subject and message body, attach some file
+	6. Click on send button
+	
+	Verification criteria
+	1. Verify that pop-up with message "Your message has been sent"
+	2. Verify that message sent in step 7 is in Outbox  for each recipient and that message Recipient, subject and body are as expected
+	3. Verify that every contact got message with subject and message body from step 6
+		
+	CASE3
+	1. Login to staging.joordev.com
+	2. Go to Messages
+	3. Click on Send Message page
+	4. Try to send message without choosing connection
+	5. Try to send message without typing message subject
+	6. Try to send message without typing message body
+	
+	Verification criteria
+	1. Verify after step 4 that pop-up with message "Your message could not be sent.  Please check your recipients list and try again" is displayed
+	2. Verify after step 5 and 6 pop-up with message "Your message could not be sent. Please ensure the message subject and body are not empty" is displayed
+	3, Verify after step 5 and 6 that recipients didn't get messages with empty subject or message body
+	
+	
